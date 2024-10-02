@@ -1,0 +1,99 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+.modalContent {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 500px;
+    max-width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-in-out;
+    max-height: 90%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+label {
+    display: block;
+    margin-top: 5px;
+    font-weight: bold;
+    color: #333;
+    font-size: 0.6rem;
+}
+
+input, textarea {
+    width: 100%;
+    margin-top: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.modalActions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modalActions button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.addApplyButton {
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-left: 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.modalActions button:first-of-type {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.modalActions button:last-of-type {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.editingButton :hover {
+    opacity: 0.9;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

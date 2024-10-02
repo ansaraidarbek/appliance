@@ -1,0 +1,83 @@
+.main {
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.main h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin: 1rem;
+}
+
+.buttonContainer {
+    width: 100%;
+    height: 5rem;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.buttonContainer button {
+    background-color: #4a56e2;
+    padding: 1rem;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.list {
+    width: 70%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    background-color: transparent;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.pagination {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+
+.pagination button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #4a56e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+@media (max-aspect-ratio: 1/1) {
+    .main h1 {
+        font-size: 1.5rem;
+    }
+
+    .buttonContainer button {
+        padding: 0.5rem;
+        font-size: 0.75rem;
+    }
+
+    .list {
+        width: 100%;
+        gap: 0.25rem;
+    }
+
+    .pagination button {
+        padding: 0.25rem;
+        font-size: 1.5rem;
+    }
+}

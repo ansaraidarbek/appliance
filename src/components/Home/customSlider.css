@@ -1,0 +1,19 @@
+.slick-slide{
+    height: 100%!important;
+}
+
+.slick-slider{
+    height: 90%!important;
+}
+
+.slick-list{
+    height: 100%!important;
+}
+
+.slick-track{
+    height: 100%!important;
+}
+
+.slick-slide > div{
+    height: 100%!important;
+}
