@@ -5,9 +5,8 @@ import "slick-carousel/slick/slick-theme.css";
 import SS from "./slider.module.css"
 import "./customSlider.css"
 import { useSelector, useDispatch } from 'react-redux';
-import handleLogging from "../../sharedJS/logging";
 
-import searchImage from '../images/search.jpg';
+import searchImage from './images/search.jpg';
 import personalizeImage from '../images/personalize.jpg';
 import applyImage from '../images/apply.jpg';
 import {nextPage} from "../../redux/slices/pageSlice";
