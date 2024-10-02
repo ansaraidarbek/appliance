@@ -27,7 +27,7 @@ const Testimonials = () => {
     <section className={SS.main}>
       <h2>User Testimonials</h2>
       <p>
-        See what our users have to say about their experience with joby
+        See what our users have to say about their experience with appliance
       </p>
       
       {testimonials.map((testimonial, index) => (
