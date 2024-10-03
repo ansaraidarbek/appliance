@@ -5,12 +5,11 @@ import "slick-carousel/slick/slick-theme.css";
 import SS from "./slider.module.css"
 import "./customSlider.css"
 import { useSelector, useDispatch } from 'react-redux';
+
+import searchImage from '../images/search.jpg';
+import personalizeImage from '../images/personalize.jpg';
+import applyImage from '../images/apply.jpg';
 import {nextPage} from "../../redux/slices/pageSlice";
-
-const searchImage = process.env.PUBLIC_URL + '/images/search.jpg';
-const personalizeImage = process.env.PUBLIC_URL + '/images/personalize.jpg';
-const applyImage = process.env.PUBLIC_URL + '/images/apply.jpg';
-
 
 const NextArrow = (props) => {
     let { className, onClick } = props;
