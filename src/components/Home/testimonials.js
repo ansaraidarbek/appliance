@@ -1,13 +1,14 @@
 import React from "react";
-
 import image1 from '../images/testingImage.jpg'; // Replace with your actual image path
 import image2 from '../images/testingImage.jpg';
 import image3 from '../images/testingImage.jpg';
 import SS from './testimonials.module.css'
 
+const image1Main = require('../images/testingImage.jpg'); // Replace with your actual image path
+
 const testimonials = [
   {
-    image: 'url(' + require( '../images/testingImage.jpg' ) + ')',
+    image: image1Main,
     title: "Great Platform",
     description: "I found my dream job through joby. Highly recommend it!",
   },
