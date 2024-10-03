@@ -48,9 +48,8 @@ const JobListingsPage = () => {
   };
 
   try {
-   // const response = await axios.request(options);
-   // const enhancedJobs = enhanceJobs(response.data.data);
-   const enhancedJobs = enhanceJobs([]);
+   const response = await axios.request(options);
+   const enhancedJobs = enhanceJobs(response.data.data);
    setJobs(enhancedJobs);
    setFetchCompleted(true);
   } catch (error) {

@@ -97,10 +97,10 @@ const App = () => {
 
           <main className="main-content">
             <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/job-listings" element={<JobListingsPage />} />
-              <Route path="/apply/:id" element={<JobApplicationPage />} />
-              <Route path="/personal-page" element={<PersonalPage />} />
+              <Route path="/appliance/" element={<Home />} />
+              <Route path="/appliance/job-listings" element={<JobListingsPage />} />
+              <Route path="/appliance/apply/:id" element={<JobApplicationPage />} />
+              <Route path="/appliance/personal-page" element={<PersonalPage />} />
             </Routes>
           </main>
 

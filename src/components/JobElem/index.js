@@ -23,7 +23,7 @@ const JobElem = ({ job, addButtons, onDelete = () => {} }) => {
             <p className={SS.description}>{job.job_description}</p>
             <p className={SS.salaryRange}>{job.job_min_salary ? `${job.job_min_salary} - ${job.job_max_salary} ${job.job_salary_currency}` : 'Salary not specified'}</p>
             <div className={SS.applyOptions}>
-                {job.apply_options?.slice(0, 6)?.map(provider => (
+                {job.apply_options?.slice(0, 3)?.map(provider => (
                     <a key={provider.apply_link} href={provider.apply_link} target="_blank" rel="noopener noreferrer">
                         Apply via {provider.publisher}
                     </a>
